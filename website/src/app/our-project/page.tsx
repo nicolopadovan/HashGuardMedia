@@ -39,8 +39,9 @@ export default function OurProject() {
             At HashGuard Media, our mission is rooted in the belief that
             authenticity and integrity should be the cornerstones of all digital
             media. In an era where digital content shapes perceptions,
-            influences decisions, and narrates the world's stories, ensuring the
-            credibility of this content is not just important—it's imperative.
+            influences decisions, and narrates the world&apos;s stories,
+            ensuring the credibility of this content is not just
+            important—it&apos;s imperative.
           </p>
           <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
             Our Commitment to Open Source and Freedom of Use
@@ -81,15 +82,15 @@ export default function OurProject() {
             Join Our Journey
           </h2>
           <p>
-            HashGuard Media is more than just a project; it's a community-driven
-            movement towards securing digital authenticity. We invite you to
-            join us in this critical mission. Whether you are a developer
-            interested in contributing to our codebase, a content creator
-            seeking to safeguard your work, or an organization aiming to ensure
-            the integrity of your digital content, HashGuard Media is your
-            partner in building a more trustworthy digital future. Together, we
-            can redefine the landscape of digital media, ensuring that truth and
-            authenticity prevail in the digital age.
+            HashGuard Media is more than just a project; it&apos;s a
+            community-driven movement towards securing digital authenticity. We
+            invite you to join us in this critical mission. Whether you are a
+            developer interested in contributing to our codebase, a content
+            creator seeking to safeguard your work, or an organization aiming to
+            ensure the integrity of your digital content, HashGuard Media is
+            your partner in building a more trustworthy digital future.
+            Together, we can redefine the landscape of digital media, ensuring
+            that truth and authenticity prevail in the digital age.
           </p>
         </Container>
       </main>

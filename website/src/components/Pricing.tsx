@@ -135,8 +135,8 @@ export function Pricing() {
             steganography, cryptographic signatures, and blockchain.
           </p>
           <p className="mt-4 text-lg text-slate-400">
-            We're committed to maintaining neutrality and providing a free tool
-            for all, ensuring content remains authentic and trustworthy.
+            We&apos;re committed to maintaining neutrality and providing a free
+            tool for all, ensuring content remains authentic and trustworthy.
           </p>
           <p className="mt-4 text-lg text-slate-400">
             Join us in shaping a future where truth prevails in the digital

@@ -95,7 +95,7 @@ export default function Register() {
       <ul>
         <li className="mt-2 text-sm text-gray-700">
           <strong>Early Access</strong>: Be among the first to experience the
-          platform's features and capabilities.
+          platform&apos;s features and capabilities. &rsquo;
         </li>
         <li className="mt-2 text-sm text-gray-700">
           <strong>Exclusive Updates</strong>: Receive the latest news, progress
@@ -103,7 +103,7 @@ export default function Register() {
         </li>
         <li className="mt-2 text-sm text-gray-700">
           <strong>Shape the Future</strong>: Your feedback can influence the
-          final product, ensuring it meets the community's needs and
+          final product, ensuring it meets the community&apos;s needs and
           expectations.
         </li>
         <li className="mt-2 text-sm text-gray-700">
