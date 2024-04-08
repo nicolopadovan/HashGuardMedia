@@ -1,28 +1,51 @@
-import hashlib
+from hashlib import sha256 as hash
 import numpy as np
 
 
 class Hasher:
-    def __init__(self):
-        self.hasher = hashlib.sha256()
+    @staticmethod
+    def hash_image(image):
+        """Calculates the SHA256 hash of an image represented as a NumPy array.
 
-    def _zero_out_lsb(self, image):
-        """Zero out the least significant bit of each pixel in the image."""
-        # Use bitwise AND with 254 (11111110 in binary) to zero out the LSB
-        zeroed_image = np.bitwise_and(image, 254)
-        return zeroed_image
+        Args:
+            image: A NumPy array representing the image.
 
-    def hash_image(self, image):
-        """Hash the image after zeroing out the LSB."""
-        zeroed_image = self._zero_out_lsb(image)
-        # Ensure the image data is contiguous in memory
-        if not zeroed_image.flags['C_CONTIGUOUS']:
-            zeroed_image = np.ascontiguousarray(zeroed_image)
-        # Convert the image to bytes
-        image_bytes = zeroed_image.tobytes()
-        # Create a SHA-256 hash of the image
-        hash_obj = hashlib.sha256()
-        hash_obj.update(image_bytes)
+        Returns:
+            A bytes object containing the SHA256 hash digest.
 
-        # Return the hash as bytes
-        return hash_obj.digest()
+        Raises:
+            ValueError: If the input image is not a valid NumPy array or has an 
+                        unsupported data type.
+            MemoryError: If the image is too large to process.
+        """
+
+        # Type and shape validation
+        if not isinstance(image, np.ndarray):
+            raise ValueError("Input 'image' must be a NumPy array.")
+
+        if image.ndim != 3:
+            raise ValueError(
+                "Image must have 3 dimensions (height, width, channels)")
+
+        # Check for supported data types
+        if image.dtype not in (np.uint8, np.uint16):
+            raise ValueError(
+                "Unsupported image data type. Use uint8 or uint16.")
+
+        # Attempt memory-efficient operations
+        try:
+            # Ensure contiguous array (may not require a copy)
+            image = np.ascontiguousarray(image)
+
+            # Get image bytes
+            image_bytes = image.tobytes()
+
+            # Calculate the hash
+            hash_obj = hash()
+            hash_obj.update(image_bytes)
+            return hash_obj.digest()
+
+        except MemoryError:
+            raise MemoryError(
+                "Image may be too large. Try resizing, reducing color depth (if possible), or increasing available memory."
+            )

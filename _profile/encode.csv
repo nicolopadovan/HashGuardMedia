@@ -1,0 +1,15 @@
+ncalls,tottime,percall,cumtime,percall,filename:lineno(function)
+2,2,1.2600000000000002e-07,1.2600000000000002e-07,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (2, 2, 1.2600000000000002e-07, 1.2600000000000002e-07)}"
+6,6,1.416e-06,1.416e-06,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (6, 6, 1.416e-06, 1.416e-06)}"
+1,1,2.9580000000000003e-06,0.006298625,{}
+1,1,6.67e-07,6.67e-07,"{('/Users/nico/opt/anaconda3/envs/crypto/lib/python3.9/site-packages/numpy/core/numeric.py', 136, 'ones'): (1, 1, 6.67e-07, 6.67e-07)}"
+1,1,2.09e-07,2.09e-07,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 2.09e-07, 2.09e-07)}"
+1,1,2.0458e-05,2.8625e-05,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 2.0458e-05, 2.8625e-05)}"
+1,1,0.006183166,0.006183166,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 0.006183166, 0.006183166)}"
+1,1,2.875e-06,2.875e-06,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 2.875e-06, 2.875e-06)}"
+1,1,6.25e-07,6.25e-07,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 6.25e-07, 6.25e-07)}"
+1,1,9e-06,9e-06,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 9e-06, 9e-06)}"
+1,1,7.5e-06,7.5e-06,"{('/Users/nico/opt/anaconda3/envs/crypto/lib/python3.9/site-packages/numpy/core/numeric.py', 136, 'ones'): (1, 1, 7.5e-06, 7.5e-06)}"
+1,1,1.833e-06,1.833e-06,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 10, 'encode'): (1, 1, 1.833e-06, 1.833e-06)}"
+1,1,5.000000000000001e-07,5.000000000000001e-07,{}
+1,1,6.7792e-05,0.0062956670000000005,"{('/Users/nico/Documents/HashGuardMedia/main.py', 25, 'wrapper'): (1, 1, 6.7792e-05, 0.0062956670000000005)}"

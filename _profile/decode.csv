@@ -1,0 +1,10 @@
+ncalls,tottime,percall,cumtime,percall,filename:lineno(function)
+1,1,2.92e-07,2.92e-07,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 58, 'decode'): (1, 1, 2.92e-07, 2.92e-07)}"
+1,1,2.08e-07,2.08e-07,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 58, 'decode'): (1, 1, 2.08e-07, 2.08e-07)}"
+1,1,0.002328208,0.018195958,{}
+1,1,6.25e-07,6.25e-07,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 58, 'decode'): (1, 1, 6.25e-07, 6.25e-07)}"
+1,1,0.006150708,0.006150708,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 58, 'decode'): (1, 1, 0.006150708, 0.006150708)}"
+1,1,0.00022725000000000002,0.00022725000000000002,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 58, 'decode'): (1, 1, 0.00022725000000000002, 0.00022725000000000002)}"
+1,1,5.3330000000000004e-06,5.3330000000000004e-06,"{('/Users/nico/Documents/HashGuardMedia/Steganography/LSB.py', 58, 'decode'): (1, 1, 5.3330000000000004e-06, 5.3330000000000004e-06)}"
+1,1,5.420000000000001e-07,5.420000000000001e-07,{}
+1,1,0.009483334000000001,0.01586775,"{('/Users/nico/Documents/HashGuardMedia/main.py', 25, 'wrapper'): (1, 1, 0.009483334000000001, 0.01586775)}"

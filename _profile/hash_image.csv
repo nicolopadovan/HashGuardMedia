@@ -1,0 +1,10 @@
+ncalls,tottime,percall,cumtime,percall,filename:lineno(function)
+1,1,4.16e-07,4.16e-07,"{('/Users/nico/Documents/HashGuardMedia/Hasher/Hasher.py', 6, 'hash_image'): (1, 1, 4.16e-07, 4.16e-07)}"
+1,1,0.0010842920000000002,0.037277667,{}
+1,1,0.006123750000000001,0.006123750000000001,"{('/Users/nico/Documents/HashGuardMedia/Hasher/Hasher.py', 6, 'hash_image'): (1, 1, 0.006123750000000001, 0.006123750000000001)}"
+1,1,4.59e-07,4.59e-07,"{('/Users/nico/Documents/HashGuardMedia/Hasher/Hasher.py', 6, 'hash_image'): (1, 1, 4.59e-07, 4.59e-07)}"
+1,1,1.2875000000000001e-05,1.2875000000000001e-05,"{('/Users/nico/Documents/HashGuardMedia/Hasher/Hasher.py', 6, 'hash_image'): (1, 1, 1.2875000000000001e-05, 1.2875000000000001e-05)}"
+1,1,0.030019833000000003,0.030019833000000003,"{('/Users/nico/Documents/HashGuardMedia/Hasher/Hasher.py', 6, 'hash_image'): (1, 1, 0.030019833000000003, 0.030019833000000003)}"
+1,1,6.4170000000000006e-06,6.4170000000000006e-06,"{('/Users/nico/Documents/HashGuardMedia/Hasher/Hasher.py', 6, 'hash_image'): (1, 1, 6.4170000000000006e-06, 6.4170000000000006e-06)}"
+1,1,7.92e-07,7.92e-07,{}
+1,1,2.9625000000000002e-05,0.036193375,"{('/Users/nico/Documents/HashGuardMedia/main.py', 25, 'wrapper'): (1, 1, 2.9625000000000002e-05, 0.036193375)}"
