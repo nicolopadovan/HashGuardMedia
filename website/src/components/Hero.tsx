@@ -24,7 +24,7 @@ export function Hero({ heading, subheading, cta }: HeroProps) {
       <div className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         {subheading}
       </div>
-      <div className="mt-10 flex justify-center gap-x-6">
+      <div className="mt-20 flex justify-center gap-x-6">
         <Button href={cta.href}>{cta.label}</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -38,41 +38,6 @@ export function Hero({ heading, subheading, cta }: HeroProps) {
           </svg>
           <span className="ml-3">Watch video</span>
         </Button>
-      </div>
-      <div className="mt-36 lg:mt-44">
-        <p className="font-display text-base text-slate-900">
-          Trusted by these six companies so far
-        </p>
-        <ul
-          role="list"
-          className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-        >
-          {[
-            [
-              { name: 'Transistor', logo: logoTransistor },
-              { name: 'Tuple', logo: logoTuple },
-              { name: 'StaticKit', logo: logoStaticKit },
-            ],
-            [
-              { name: 'Mirage', logo: logoMirage },
-              { name: 'Laravel', logo: logoLaravel },
-              { name: 'Statamic', logo: logoStatamic },
-            ],
-          ].map((group, groupIndex) => (
-            <li key={groupIndex}>
-              <ul
-                role="list"
-                className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-              >
-                {group.map((company) => (
-                  <li key={company.name} className="flex">
-                    <Image src={company.logo} alt={company.name} unoptimized />
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
       </div>
     </Container>
   )

@@ -107,17 +107,17 @@ export function Header() {
               <Image src={logo} alt={''} height={40} width={40} />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Open Source</NavLink>
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/donate">Donate</NavLink>
+              <NavLink href="/our-project">Our project</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="/sign-up">Sign up</NavLink>
+              <NavLink href="#donate">Donate</NavLink>
             </div>
             <Button href="/sign-up" color="blue">
-              <span>Protect your content</span>
+              Get Started
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

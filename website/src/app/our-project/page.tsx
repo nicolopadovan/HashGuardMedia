@@ -11,7 +11,7 @@ export default function OurProject() {
         <Hero
           heading={
             <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-              HashGuard Media is produly{' '}
+              HashGuard Media is proudly{' '}
               <span className="relative whitespace-nowrap text-blue-600">
                 <svg
                   aria-hidden="true"

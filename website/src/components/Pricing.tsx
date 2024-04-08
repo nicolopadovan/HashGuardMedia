@@ -111,8 +111,8 @@ function Plan({
 export function Pricing() {
   return (
     <section
-      id="pricing"
-      aria-label="Pricing"
+      id="donate"
+      aria-label="Donate"
       className="bg-slate-900 py-20 sm:py-32"
     >
       <Container>

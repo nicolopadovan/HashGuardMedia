@@ -6,19 +6,129 @@ import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-gray-200">
       <Container>
         <div className="py-16">
-          <div className="mx-auto flex h-10 w-auto items-center justify-center gap-5">
+          <div className="mx-auto flex h-10 w-auto items-center gap-5 font-semibold uppercase text-blue-500">
             <Image src={logo} alt={''} height={40} width={40} />
             HashGuard Media
           </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-            </div>
+            <ul className="-my-1 grid grid-cols-1 justify-center gap-5 gap-x-6 lg:grid-cols-5">
+              <li className="lg:border-r lg:border-slate-400/20">
+                <h3 className="mb-2 font-semibold uppercase text-blue-500">
+                  Legal
+                </h3>
+                <ul>
+                  <li>
+                    <Link
+                      href="/legal/privacy-policy"
+                      className="hover:underline"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/legal/terms-of-service"
+                      className="hover:underline"
+                    >
+                      Terms of Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/legal/cookie-policy"
+                      className="hover:underline"
+                    >
+                      Cookie Policy
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="lg:border-r lg:border-slate-400/20">
+                <h3 className="mb-2 font-semibold uppercase text-blue-500">
+                  Community
+                </h3>
+                <ul>
+                  <li>
+                    <Link
+                      href="https://github.com/nicolopadovan/HashGuardMedia"
+                      className="hover:underline"
+                    >
+                      GitHub
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:underline">
+                      Discord
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:underline">
+                      Blog
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="lg:border-r lg:border-slate-400/20">
+                <h3 className="mb-2 font-semibold uppercase text-blue-500">
+                  Funding
+                </h3>
+                <ul>
+                  <li>
+                    <Link href="/donate" className="hover:underline">
+                      Donate now
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:underline">
+                      Open Collective
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:underline">
+                      GitHub Sponsors
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="flex flex-col items-start lg:col-span-2">
+                <label
+                  htmlFor="price"
+                  className="mb-2 font-semibold uppercase text-blue-500"
+                >
+                  Newsletter
+                </label>
+
+                <p className="tracking-tight text-black">
+                  Stay informed about news and updates.
+                </p>
+                <p className="tracking-tight text-black">
+                  We promise to keep your inbox free of clutter, focusing only
+                  on meaningful updates and exciting milestones.
+                </p>
+
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                  placeholder="Enter your email address"
+                  aria-describedby="price-currency"
+                />
+
+                <button
+                  type="button"
+                  className="mt-4 flex flex-row items-center justify-start gap-5 rounded-full bg-blue-600 px-6 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
           </nav>
         </div>
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
@@ -32,7 +142,11 @@ export function Footer() {
                 <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
               </svg>
             </Link>
-            <Link href="#" className="group" aria-label="TaxPal on GitHub">
+            <Link
+              href="https://github.com/nicolopadovan/HashGuardMedia"
+              className="group"
+              aria-label="TaxPal on GitHub"
+            >
               <svg
                 className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
                 aria-hidden="true"
