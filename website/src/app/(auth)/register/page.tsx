@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import { notFound } from 'next/navigation'
 import { Button } from '@/components/Button'
 import { SelectField, TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 }
 
 export default function Register() {
+  return notFound()
+
   return (
     <SlimLayout>
       <div className="flex">

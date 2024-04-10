@@ -89,12 +89,12 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Trusted by Creators Everywhere.
+            Voices Against Digital Deception
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our innovative solutions empower individuals and businesses to
-            safeguard their digital assets, earning widespread acclaim for
-            reliability and ease of use.
+            Leading minds in technology and security unite in their concern over
+            AI and DeepFakes, highlighting the urgent need for trusted,
+            authentic digital media.
           </p>
         </div>
         <ul

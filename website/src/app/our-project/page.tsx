@@ -1,17 +1,20 @@
+import bruceschneier from '@/images/avatars/bruceschneier.jpeg'
 import { Container } from '@/components/Container'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import {
+  CheckCircleIcon,
+  InformationCircleIcon,
+} from '@heroicons/react/20/solid'
 import { Hero } from '@/components/Hero'
+import Image from 'next/image'
 
 export default function OurProject() {
   return (
     <>
-      <Header />
       <main>
         <Hero
           heading={
             <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-              HashGuard Media is produly{' '}
+              HashGuard Media is proudly{' '}
               <span className="relative whitespace-nowrap text-blue-600">
                 <svg
                   aria-hidden="true"
@@ -31,70 +34,137 @@ export default function OurProject() {
             href: '#',
           }}
         />
-        <Container>
-          <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
-            Empower Your Digital Content. Protect Its Authenticity.
-          </h2>
-          <p>
-            At HashGuard Media, our mission is rooted in the belief that
-            authenticity and integrity should be the cornerstones of all digital
-            media. In an era where digital content shapes perceptions,
-            influences decisions, and narrates the world&apos;s stories,
-            ensuring the credibility of this content is not just
-            important—it&apos;s imperative.
-          </p>
-          <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
-            Our Commitment to Open Source and Freedom of Use
-          </h2>
-          <p>
-            We stand firmly on the principles of openness and accessibility.
-            HashGuard Media is an open-source project, embodying a commitment to
-            transparency, community collaboration, and innovation. By making our
-            technology freely available, we empower creators, developers, and
-            organizations to protect the integrity of their media, foster trust
-            with their audiences, and contribute to a more authentic digital
-            world.
-          </p>
-          <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
-            Unwavering Neutrality
-          </h2>
-          <p>
-            Our platform is designed with a steadfast commitment to
-            impartiality. HashGuard Media refuses to be swayed by external
-            influences, ensuring our technology remains unbiased, secure, and
-            reliable. We believe in providing a tool that serves the interests
-            of all users equally, fostering an environment of trust and
-            integrity.
-          </p>
-          <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
-            The Threat We Combat
-          </h2>
-          <p>
-            In the face of rising concerns over deepfakes, unauthorized content
-            manipulation, and misinformation, HashGuard Media provides a beacon
-            of trust. Our innovative use of steganography, cryptographic
-            signatures, and blockchain technology offers a robust solution for
-            verifying the authenticity of digital media. We are at the forefront
-            of combating the threat posed by digital forgeries, protecting the
-            public discourse and the truth it relies upon.
-          </p>
-          <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
-            Join Our Journey
-          </h2>
-          <p>
-            HashGuard Media is more than just a project; it&apos;s a
-            community-driven movement towards securing digital authenticity. We
-            invite you to join us in this critical mission. Whether you are a
-            developer interested in contributing to our codebase, a content
-            creator seeking to safeguard your work, or an organization aiming to
-            ensure the integrity of your digital content, HashGuard Media is
-            your partner in building a more trustworthy digital future.
-            Together, we can redefine the landscape of digital media, ensuring
-            that truth and authenticity prevail in the digital age.
-          </p>
-        </Container>
+
+        <div className="bg-white px-6 py-32 lg:px-8">
+          <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <p className="text-base font-semibold leading-7 text-blue-600">
+              HashGuard Media
+            </p>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Empower Your Digital Content. Protect Its Authenticity.
+            </h1>
+            <p className="mt-6 text-xl leading-8">
+              At HashGuard Media, our mission is rooted in the belief that
+              authenticity and integrity should be the cornerstones of all
+              digital media. In an era where digital content shapes perceptions,
+              influences decisions, and narrates the world&apos;s stories,
+              ensuring the credibility of this content is not just
+              important—it&apos;s imperative.
+            </p>
+            <div className="mt-10 max-w-2xl">
+              <p>
+                We stand firmly on the principles of openness and accessibility.
+                HashGuard Media is an open-source project, embodying a
+                commitment to transparency, community collaboration, and
+                innovation. By making our technology freely available, we
+                empower creators, developers, and organizations to protect the
+                integrity of their media, foster trust with their audiences, and
+                contribute to a more authentic digital world.
+              </p>
+              <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
+                <li className="flex gap-x-3">
+                  <CheckCircleIcon
+                    className="mt-1 h-5 w-5 flex-none text-blue-600"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      Our Commitment to Open Source and Freedom of Use.
+                    </strong>{' '}
+                    We stand firmly on the principles of openness and
+                    accessibility. HashGuard Media is an open-source project,
+                    embodying a commitment to transparency, community
+                    collaboration, and innovation. By making our technology
+                    freely available, we empower creators, developers, and
+                    organizations to protect the integrity of their media,
+                    foster trust with their audiences, and contribute to a more
+                    authentic digital world.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <CheckCircleIcon
+                    className="mt-1 h-5 w-5 flex-none text-blue-600"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      Unwavering Neutrality.
+                    </strong>{' '}
+                    Our platform is designed with a steadfast commitment to
+                    impartiality. HashGuard Media refuses to be swayed by
+                    external influences, ensuring our technology remains
+                    unbiased, secure, and reliable. We believe in providing a
+                    tool that serves the interests of all users equally,
+                    fostering an environment of trust and integrity.
+                  </span>
+                </li>
+                <li className="flex gap-x-3">
+                  <CheckCircleIcon
+                    className="mt-1 h-5 w-5 flex-none text-blue-600"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    <strong className="font-semibold text-gray-900">
+                      The Threat We Combat.
+                    </strong>{' '}
+                    In the face of rising concerns over deepfakes, unauthorized
+                    content manipulation, and misinformation, HashGuard Media
+                    provides a beacon of trust. Our innovative use of
+                    steganography, cryptographic signatures, and blockchain
+                    technology offers a robust solution for verifying the
+                    authenticity of digital media. We are at the forefront of
+                    combating the threat posed by digital forgeries, protecting
+                    the public discourse and the truth it relies upon.
+                  </span>
+                </li>
+              </ul>
+              <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+                Join Our Journey
+              </h2>
+              <p className="mt-6">
+                HashGuard Media is more than just a project; it&apos;s a
+                community-driven movement towards securing digital authenticity.
+                We invite you to join us in this critical mission.
+              </p>
+              <figure className="mt-10 border-l border-blue-600 pl-9">
+                <blockquote className="font-semibold text-gray-900">
+                  <p>
+                    &quot;A well-crafted deepfake video of a CEO announcing a
+                    corporate disaster could temporarily crash the
+                    company&apos;s stock price. A deepfake video of a soldier
+                    committing war crimes could turn a country against another.
+                    Deepfake videos can be used in any number of ways to
+                    manipulate our individual and collective perceptions of
+                    reality.&quot;
+                  </p>
+                </blockquote>
+                <figcaption className="mt-6 flex gap-x-4">
+                  <Image
+                    className="h-6 w-6 flex-none rounded-full bg-gray-50"
+                    src={bruceschneier}
+                    alt=""
+                  />
+                  <div className="text-sm leading-6">
+                    <strong className="font-semibold text-gray-900">
+                      Bruce Schneier
+                    </strong>{' '}
+                    Security Expert
+                  </div>
+                </figcaption>
+              </figure>
+              <p className="mt-10">
+                Whether you are a developer interested in contributing to our
+                codebase, a content creator seeking to safeguard your work, or
+                an organization aiming to ensure the integrity of your digital
+                content, HashGuard Media is your partner in building a more
+                trustworthy digital future. Together, we can redefine the
+                landscape of digital media, ensuring that truth and authenticity
+                prevail in the digital age.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
-      <Footer />
     </>
   )
 }
