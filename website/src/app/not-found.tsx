@@ -6,7 +6,7 @@ import { SlimLayout } from '@/components/SlimLayout'
 
 export default function NotFound() {
   return (
-    <SlimLayout>
+    <SlimLayout className="h-screen">
       <div className="flex">
         <Link href="/" aria-label="Home">
           <Logo className="h-10 w-auto" />

@@ -9,7 +9,6 @@ import Image from 'next/image'
 export default function OurProject() {
   return (
     <>
-      <Header />
       <main>
         <Hero
           heading={
@@ -69,8 +68,9 @@ export default function OurProject() {
                 </span>
               </h2>
               <p className="mt-4 text-lg tracking-tight text-black">
-                Embrace the future of digital security. Protect your creations
-                against DeepFakes and unauthorized use today.
+                Embrace the future of digital security. Your donation will help
+                us continue our mission to safeguard the integrity of digital
+                content.
               </p>
               <label
                 htmlFor="amount"
@@ -112,7 +112,6 @@ export default function OurProject() {
           </Container>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

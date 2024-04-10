@@ -108,13 +108,15 @@ export function Header() {
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="/">Home</NavLink>
-              <NavLink href="/donate">Donate</NavLink>
-              <NavLink href="/our-project">Our project</NavLink>
+              <NavLink href="/our-project">Our Project</NavLink>
+              <NavLink href="/technology">Technology</NavLink>
+              <NavLink href="/get-involved">Get Involved</NavLink>
+              <NavLink href="/docs">Docs</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="#donate">Donate</NavLink>
+              <NavLink href="/donate">Donate</NavLink>
             </div>
             <Button href="/sign-up" color="blue">
               Get Started

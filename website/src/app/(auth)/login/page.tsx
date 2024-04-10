@@ -5,12 +5,15 @@ import { TextField } from '@/components/Fields'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 import { type Metadata } from 'next'
+import { notFound } from 'next/navigation'
 
 export const metadata: Metadata = {
   title: 'Sign In',
 }
 
 export default function Login() {
+  return notFound()
+
   return (
     <SlimLayout>
       <div className="flex">
@@ -56,4 +59,11 @@ export default function Login() {
       </form>
     </SlimLayout>
   )
+}
+
+export const getStaticProps = async () => {
+  // Always return not found
+  return {
+    notFound: true,
+  }
 }
