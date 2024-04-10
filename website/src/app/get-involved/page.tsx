@@ -4,6 +4,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 const stats = [
   { label: 'Founded', value: '2021' },
@@ -153,15 +154,24 @@ export default function GetInvolved() {
                     Guidelines for Contribution
                   </strong>{' '}
                   To maintain the quality of our project, we ask that all
-                  contributors adhere to our Contribution Guidelines. These
-                  include coding standards, commit message formatting, and how
-                  to submit a successful pull request.
+                  contributors adhere to our{' '}
+                  <Link
+                    href="/guidelines/contributions"
+                    className="text-blue-500 underline"
+                  >
+                    Contribution Guidelines
+                  </Link>
+                  . These include coding standards, commit message formatting,
+                  and how to submit a successful pull request.
                 </p>
                 <p className="mt-8">
                   <strong className="block font-semibold text-gray-900">
                     Development Roadmap
                   </strong>{' '}
-                  Curious about what’s next for HashGuard Media? Our Roadmap
+                  Curious about what’s next for HashGuard Media? Our{' '}
+                  <Link href="/roadmap" className="text-blue-500 underline">
+                    Roadmap
+                  </Link>{' '}
                   outlines our future plans and highlights where we need the
                   most help. Let’s innovate together.
                 </p>
@@ -170,19 +180,14 @@ export default function GetInvolved() {
                     Open Source Repository
                   </strong>{' '}
                   Our entire codebase is open for you to explore and contribute
-                  to. Visit our GitHub Repository to start making a difference
-                  today.
-                </p>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  No server? No problem.
-                </h2>
-                <p className="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
+                  to. Visit our{' '}
+                  <Link
+                    href="https://github.com/nicolopadovan/HashGuardMedia"
+                    className="text-blue-500 underline"
+                  >
+                    GitHub Repository
+                  </Link>{' '}
+                  to start making a difference today.
                 </p>
               </div>
             </div>
@@ -251,20 +256,15 @@ export default function GetInvolved() {
                     Community Guidelines
                   </strong>{' '}
                   To ensure a welcoming and inclusive environment, we ask that
-                  all community members adhere to our Community Guidelines.
-                  These include respectful communication, constructive feedback,
-                  and how to report issues.
-                </p>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  No server? No problem.
-                </h2>
-                <p className="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
+                  all community members adhere to our{' '}
+                  <Link
+                    href="/guidelines/community"
+                    className="text-blue-500 underline"
+                  >
+                    Community Guidelines
+                  </Link>
+                  . These include respectful communication, constructive
+                  feedback, and how to report issues.
                 </p>
               </div>
             </div>
@@ -315,8 +315,14 @@ export default function GetInvolved() {
                         <strong className="font-semibold text-gray-900">
                           Newsletter
                         </strong>{' '}
-                        Sign up for our newsletter here for regular updates
-                        straight to your inbox.
+                        Sign up for our newsletter{' '}
+                        <Link
+                          href="/sign-up"
+                          className="text-blue-500 underline"
+                        >
+                          here
+                        </Link>{' '}
+                        for regular updates straight to your inbox.
                       </span>
                     </li>
                     <li className="flex gap-x-3">
@@ -328,8 +334,28 @@ export default function GetInvolved() {
                         <strong className="font-semibold text-gray-900">
                           Follow Us
                         </strong>{' '}
-                        Stay engaged and join the conversation on Twitter,
-                        LinkedIn, and Facebook.
+                        Stay engaged and join the conversation on{' '}
+                        <Link
+                          href="/guidelines/contributions"
+                          className="text-blue-500 underline"
+                        >
+                          Twitter
+                        </Link>
+                        ,{' '}
+                        <Link
+                          href="/guidelines/contributions"
+                          className="text-blue-500 underline"
+                        >
+                          LinkedIn
+                        </Link>
+                        , and{' '}
+                        <Link
+                          href="/guidelines/contributions"
+                          className="text-blue-500 underline"
+                        >
+                          Facebook
+                        </Link>
+                        .
                       </span>
                     </li>
                     <li className="flex gap-x-3">
@@ -372,7 +398,11 @@ export default function GetInvolved() {
                         <strong className="font-semibold text-gray-900">
                           Upcoming Events
                         </strong>{' '}
-                        Check out our Events Calendar for what’s coming up.
+                        Check out our{' '}
+                        <Link href="/" className="text-blue-500 underline">
+                          events calendar
+                        </Link>{' '}
+                        for what’s coming up.
                       </span>
                     </li>
                     <li className="flex gap-x-3">
@@ -386,6 +416,25 @@ export default function GetInvolved() {
                         </strong>{' '}
                         Interested in hosting a HashGuard Media event? We’ve got
                         you covered with our event organization guide.
+                      </span>
+                    </li>
+                    <li className="flex gap-x-3">
+                      <LockClosedIcon
+                        className="mt-1 h-5 w-5 flex-none text-blue-600"
+                        aria-hidden="true"
+                      />
+                      <span>
+                        <strong className="font-semibold text-gray-900">
+                          Past Events
+                        </strong>{' '}
+                        Missed an event? Catch up on our past webinars and
+                        meetups with our{' '}
+                        <Link
+                          href="/not-found"
+                          className="text-blue-500 underline"
+                        >
+                          event recordings
+                        </Link>
                       </span>
                     </li>
                   </ul>
