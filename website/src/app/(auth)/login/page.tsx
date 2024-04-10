@@ -60,10 +60,3 @@ export default function Login() {
     </SlimLayout>
   )
 }
-
-export const getStaticProps = async () => {
-  // Always return not found
-  return {
-    notFound: true,
-  }
-}

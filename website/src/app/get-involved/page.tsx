@@ -105,11 +105,11 @@ export default function GetInvolved() {
                 For Developers
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                Whether you're fixing bugs, adding features, or improving
+                Whether you&apos;re fixing bugs, adding features, or improving
                 documentation, your contributions are invaluable.
               </p>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700 lg:max-w-none">
-                <p>Here’s how to get started:</p>
+                <p>Here&apos;s how to get started:</p>
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                   <li className="flex gap-x-3">
                     <CloudArrowUpIcon

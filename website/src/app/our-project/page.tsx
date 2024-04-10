@@ -118,7 +118,6 @@ export default function OurProject() {
                   </span>
                 </li>
               </ul>
-
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                 Join Our Journey
               </h2>
@@ -130,12 +129,13 @@ export default function OurProject() {
               <figure className="mt-10 border-l border-blue-600 pl-9">
                 <blockquote className="font-semibold text-gray-900">
                   <p>
-                    "A well-crafted deepfake video of a CEO announcing a
-                    corporate disaster could temporarily crash the company's
-                    stock price. A deepfake video of a soldier committing war
-                    crimes could turn a country against another. Deepfake videos
-                    can be used in any number of ways to manipulate our
-                    individual and collective perceptions of reality."
+                    &quot;A well-crafted deepfake video of a CEO announcing a
+                    corporate disaster could temporarily crash the
+                    company&apos;s stock price. A deepfake video of a soldier
+                    committing war crimes could turn a country against another.
+                    Deepfake videos can be used in any number of ways to
+                    manipulate our individual and collective perceptions of
+                    reality.&quot;
                   </p>
                 </blockquote>
                 <figcaption className="mt-6 flex gap-x-4">

@@ -223,12 +223,13 @@ export default function Technology() {
                       content against unauthorized use and distribution. By
                       implementing dynamic watermarking, HashGuard Media
                       introduces an additional layer of security that
-                      discourages misuse and tampering, ensuring that creators'
-                      rights are protected under various conditions. This
-                      innovative approach not only challenges the conventional
-                      limitations of static watermarks but also reinforces the
-                      integrity and rightful ownership of digital media,
-                      adapting seamlessly to the evolving digital landscape.
+                      discourages misuse and tampering, ensuring that
+                      creators&apos; rights are protected under various
+                      conditions. This innovative approach not only challenges
+                      the conventional limitations of static watermarks but also
+                      reinforces the integrity and rightful ownership of digital
+                      media, adapting seamlessly to the evolving digital
+                      landscape.
                     </span>
                   </li>
                 </ul>
@@ -321,12 +322,12 @@ export default function Technology() {
                 </h2>
                 <p className="mt-6">
                   Our proprietary blend of dynamic watermarking and
-                  zero-knowledge proof verification is just the start. We're
-                  constantly pushing the boundaries, developing tools that not
-                  only secure digital content but also respect privacy and
-                  promote transparency. These innovations aren't just ours;
-                  they're contributions to a future where digital truth is
-                  undeniable.
+                  zero-knowledge proof verification is just the start.
+                  We&apos;re constantly pushing the boundaries, developing tools
+                  that not only secure digital content but also respect privacy
+                  and promote transparency. These innovations aren&apos;t just
+                  ours; they&apos;re contributions to a future where digital
+                  truth is undeniable.
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                   Why Open Source Matters
@@ -343,22 +344,22 @@ export default function Technology() {
                   Get Involved
                 </h2>
                 <p className="mt-6">
-                  Whether you're a coder looking to contribute, a researcher
-                  seeking to delve deeper, or simply someone passionate about
-                  the truth in media, your journey starts here. Dive into our
-                  code, explore our technologies, or reach out with your ideas.
-                  Together, we can build a future of authentic digital
-                  expression.
+                  Whether you&apos;re a coder looking to contribute, a
+                  researcher seeking to delve deeper, or simply someone
+                  passionate about the truth in media, your journey starts here.
+                  Dive into our code, explore our technologies, or reach out
+                  with your ideas. Together, we can build a future of authentic
+                  digital expression.
                 </p>
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
                   FAQs
                 </h2>
                 <p className="mt-6">
-                  Got questions? We've got answers. From understanding the
+                  Got questions? We&apos;ve got answers. From understanding the
                   basics of blockchain to exploring the depths of digital
                   signatures, our FAQ section is here to demystify our
-                  technology and its applications. Discover how we're making
-                  digital media trustworthy again.
+                  technology and its applications. Discover how we&apos;re
+                  making digital media trustworthy again.
                 </p>
               </div>
             </div>
