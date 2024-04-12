@@ -12,7 +12,7 @@ export interface HeroProps {
 
 export function Hero({ heading, subheading, cta }: HeroProps) {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32">
+    <Container className="pb-16 text-center sm:pt-20 lg:pt-32">
       {heading}
       <div className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         {subheading}

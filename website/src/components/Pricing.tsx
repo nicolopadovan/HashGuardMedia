@@ -118,11 +118,12 @@ export function Pricing() {
       <Container>
         <div className="md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+            Why we are{' '}
             <span className="relative whitespace-nowrap">
               <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
-              <span className="relative">Why we are Open Source,</span>
-            </span>{' '}
-            and how you can help
+              <span className="relative">Open Source,</span>
+            </span>
+            <span className="mt-2 block text-xl">and how you can help</span>
           </h2>
           <p className="mt-4 text-lg text-slate-400">
             Our project thrives on community support, allowing us to keep our
@@ -153,6 +154,7 @@ export function Pricing() {
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
+            featured
             name="Donate"
             description="Support us with a donation. Your contributions help us maintain and improve the project."
             cta="Donate now"
@@ -164,7 +166,6 @@ export function Pricing() {
             ]}
           />
           <Plan
-            featured
             name="Contribute"
             description="Join our developer community. Help us grow by contributing to the codebase or documentation."
             cta="Get started"
