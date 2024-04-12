@@ -1,13 +1,20 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/24/outline'
 
-export default function Example() {
+export default function TailwindDialog() {
   const [open, setOpen] = useState(true)
+
+  const cancelButtonRef = useRef(null)
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Dialog
+        as="div"
+        className="relative z-10"
+        initialFocus={cancelButtonRef}
+        onClose={setOpen}
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -31,7 +38,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
                 <div>
                   <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
                     <CheckIcon
@@ -48,19 +55,29 @@ export default function Example() {
                     </Dialog.Title>
                     <div className="mt-2">
                       <p className="text-sm text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequatur amet labore.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Eius aliquam laudantium explicabo pariatur iste
+                        dolorem animi vitae error totam. At sapiente aliquam
+                        accusamus facere veritatis.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="mt-5 sm:mt-6">
+                <div className="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                    className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
                     onClick={() => setOpen(false)}
                   >
-                    Go back to dashboard
+                    Deactivate
+                  </button>
+                  <button
+                    type="button"
+                    className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
+                    onClick={() => setOpen(false)}
+                    ref={cancelButtonRef}
+                  >
+                    Cancel
                   </button>
                 </div>
               </Dialog.Panel>
