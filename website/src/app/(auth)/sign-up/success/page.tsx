@@ -65,14 +65,14 @@ export default function Register() {
                   <strong className="font-semibold text-gray-900">
                     Thank You for Your Support.
                   </strong>{' '}
-                  Your involvement is crucial. Together, we're building a
+                  Your involvement is crucial. Together, we&apos;re building a
                   trustworthy digital world.
                 </span>
               </li>
             </ul>
 
             <p className="mt-4 text-gray-600">
-              Welcome to HashGuard Media—we're glad you're here!
+              Welcome to HashGuard Media—we&apos;re glad you&apos;re here!
             </p>
           </div>
           <div>
