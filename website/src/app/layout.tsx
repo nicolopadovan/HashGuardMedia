@@ -1,6 +1,5 @@
 import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
-
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 import { Header } from '@/components/Header'
@@ -45,6 +44,7 @@ export default function RootLayout({
         <Header />
         <main className="">{children}</main>
         <Footer />
+        <div id="portal-dialog-root"></div>
       </body>
     </html>
   )

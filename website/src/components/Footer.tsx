@@ -1,10 +1,58 @@
+'use client'
 import Link from 'next/link'
 import logo from '@/images/logos/logo.svg'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
+import { useCallback, useState } from 'react'
 
 export function Footer() {
+  const [email, setEmail] = useState('')
+
+  const handleSubmit = useCallback(
+    async (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault()
+
+      if (!email) {
+        alert('Please enter your email address.')
+        return
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.')
+        return
+      }
+
+      const body = {
+        email: email,
+      }
+
+      try {
+        const response = await fetch('/api/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(body),
+        })
+
+        if (response.ok) {
+          alert('Success! You have been signed up.')
+
+          setEmail('')
+        } else {
+          if (response.status === 409) {
+            alert('This email address is already registered.')
+          } else {
+            alert('Something went wrong. Please try again.')
+          }
+        }
+      } catch (error) {}
+    },
+    [email],
+  )
+
   return (
     <footer className="bg-gray-200">
       <Container>
@@ -112,21 +160,26 @@ export function Footer() {
                   on meaningful updates and exciting milestones.
                 </p>
 
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                  placeholder="Enter your email address"
-                  aria-describedby="price-currency"
-                />
+                <form className="block w-full" onSubmit={handleSubmit}>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="mt-2 block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                    placeholder="Enter your email address"
+                    aria-describedby="price-currency"
+                    required
+                    onChange={(event) => setEmail(event.target.value)}
+                    value={email}
+                  />
 
-                <button
-                  type="button"
-                  className="mt-4 flex flex-row items-center justify-start gap-5 rounded-full bg-blue-600 px-6 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                >
-                  Sign Up
-                </button>
+                  <button
+                    type="submit"
+                    className="mt-4 flex flex-row items-center justify-start gap-5 rounded-full bg-blue-600 px-6 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  >
+                    Sign Up
+                  </button>
+                </form>
               </li>
             </ul>
           </nav>
