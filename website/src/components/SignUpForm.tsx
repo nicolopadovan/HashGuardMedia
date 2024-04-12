@@ -4,6 +4,7 @@ import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
 import { useCallback, useState } from 'react'
 import { usePopup } from './PopUp/PopupContext'
+import { useRouter } from 'next/navigation'
 
 interface FormState {
   firstName: string
@@ -22,6 +23,8 @@ export default function SignUpForm() {
     email: '',
     optIn: false,
   })
+
+  const router = useRouter()
 
   const handleSubmit = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
@@ -58,11 +61,13 @@ export default function SignUpForm() {
         setIsLoading(false)
 
         if (response.ok) {
-          openPopup({
-            title: 'Success',
-            description: 'You have successfully signed up for our newsletter.',
-            cancelBtnText: 'Close',
-          })
+          //   openPopup({
+          //     title: 'Success',
+          //     description: 'You have successfully signed up for our newsletter.',
+          //     cancelBtnText: 'Close',
+          //   })
+
+          router.push('/sign-up/success')
         } else {
           console.log('response', response)
 

@@ -1,9 +1,5 @@
 import bruceschneier from '@/images/avatars/bruceschneier.jpeg'
-import { Container } from '@/components/Container'
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-} from '@heroicons/react/20/solid'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { Hero } from '@/components/Hero'
 import Image from 'next/image'
 
