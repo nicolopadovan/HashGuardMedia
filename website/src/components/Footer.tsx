@@ -48,9 +48,7 @@ export function Footer() {
             alert('Something went wrong. Please try again.')
           }
         }
-      } catch (error) {
-        console.error('An unexpected error occurred:', error.message)
-      }
+      } catch (error) {}
     },
     [email],
   )
