@@ -33,7 +33,7 @@ export default function Home() {
         }
         cta={{
           label: 'Start now',
-          href: '/register',
+          href: '/sign-up',
         }}
       />
       <PrimaryFeatures />
