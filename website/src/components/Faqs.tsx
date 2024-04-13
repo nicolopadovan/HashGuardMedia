@@ -148,7 +148,7 @@ export function Faqs() {
             If you can’t find what you’re looking for, email our support team
             and if you’re lucky someone will get back to you.
           </p>
-          <Button href="/register" color="blue" className="mt-10">
+          <Button href="/sign-up" color="blue" className="mt-10">
             Learn more about our project
           </Button>
         </div>

@@ -49,7 +49,7 @@ export default function Donations() {
             Your donations play a crucial role in multiple aspects of our
             project.
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="/sign-up" color="white" className="mt-10">
             Discover more
           </Button>
 
