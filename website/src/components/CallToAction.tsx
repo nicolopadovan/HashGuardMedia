@@ -26,7 +26,7 @@ export function CallToAction() {
             Embrace the future of digital security. Protect your creations
             against DeepFakes and unauthorized use today.
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="/sign-up" color="white" className="mt-10">
             I want to protect my content
           </Button>
         </div>

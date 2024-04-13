@@ -83,7 +83,7 @@ export function PrimaryFeatures() {
             Everything you need to safeguard against digital impersonation.
             Ideal for those who value integrity over invasiveness.
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="/our-project" color="white" className="mt-10">
             Discover more
           </Button>
         </div>
